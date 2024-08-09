@@ -38,7 +38,12 @@ export const Sidebar = () => {
                 <p className='font-light'>We'll keep you updated on new episodes</p>
                 <button className='px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4 '>Browse Podcast</button>
             </div>
-            {Array(8).fill().map((_, index) => (
+            {/* <div className='p-4 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4'> 
+            </div>
+            <div className='p-4 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4'> 
+            </div> */}
+
+            {Array(6).fill().map((_, index) => (
                 <div
                     key={index}
                     className='p-4 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4'
