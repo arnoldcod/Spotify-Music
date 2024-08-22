@@ -31,9 +31,8 @@ const AddAlbum = () => {
             <input type="color" />
         </div>
 
-       <button className='text-base bg-black text-white py-2.5 px-14 cursor-pointer ' type="submit">Add</button>
+       <button className='text-base bg-black text-white py-2.5 px-14 cursor-pointer ' type="submit">ADD</button>
 
-        
     </form>
   )
 }
