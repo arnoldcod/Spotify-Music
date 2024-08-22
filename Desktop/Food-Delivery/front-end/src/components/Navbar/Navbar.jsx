@@ -14,7 +14,7 @@ const Navbar = () => {
             <li onClick={()=>setMenu("menu")} className={menu==="menu" ? "active": " "}>menu</li>
             <li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app" ? "active": " "}>mobile-app</li>
             <li onClick={()=>setMenu("contact-us")} className={menu==="contact-us" ? "active": " "}>contact us</li>
-            </ul>  
+        </ul>  
            <div className="navbar-right">
             <img src={assets.search_icon} alt="" />
             <div className="navbar-search-icon">
