@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext,  useEffect,  useState } from 'react'
 import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext'
@@ -65,6 +66,7 @@ const PlaceOrder = () => {
       else if (getTotalCartAmount()===0) {
         navigate('/cart')
       }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[token])
 
 

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect, useState } from 'react'
 import './MyOrders.css'
 import { StoreContext } from '../../context/StoreContext';
@@ -20,6 +21,7 @@ const MyOrders = () => {
         if (token) {
           fetchOrders();
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [token])
 
   return (
@@ -42,7 +44,7 @@ const MyOrders = () => {
                <p>${order.amount}.00</p>
                <p>Items: {order.items.length}</p>
                <p><span>&#x25cf;</span> <b>{order.status}</b></p>
-               <button>Track Order</button>
+               <button onClick={fetchOrders}>Track Order</button>
             </div>
           )
          })}
