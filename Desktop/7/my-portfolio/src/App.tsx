@@ -6,7 +6,9 @@ import { MantineProvider } from '@mantine/core';
 function App() {
   return (
     <MantineProvider >
-    <HomePage/>
+
+       <HomePage />    
+
     </MantineProvider>
   );
 }
