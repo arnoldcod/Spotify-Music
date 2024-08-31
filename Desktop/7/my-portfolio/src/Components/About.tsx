@@ -69,7 +69,7 @@ const About = ()=> {
                 <Button component="a" href="https://www.linkedin.com/in/arnold-uwamwezi-98902b198/" className="!text-bgColor !w-fit" size="lg" variant="filled" color="#64FFDA">Check Resume</Button>
             </div>
             <div className="h-[35vh] flex justify-center items-center overflow-hidden rounded-full mr-14 w-[22vw]" id="photo">
-                    <img className="w-[85%] shadow-xl rounded-full " src="/7.png" alt="profile" />
+                    <img className="w-[85%] justify-center  shadow-xl rounded-full " src="/7.png" alt="profile" />
             </div>
 
         </div>
