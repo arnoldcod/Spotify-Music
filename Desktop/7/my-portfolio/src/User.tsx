@@ -17,7 +17,7 @@ const ProjectInfo = [
         github: "https://github.com/arnoldcod"
     },
     {
-        title: "Food delivery App (Tomato)",
+        title: "Food  App (Tomato)",
         desc: "Tomato is a modern food delivery app built using the MERN stack (MongoDB, Express.js, React, Node.js) that offers a seamless and enjoyable online food shopping experience. With Tomato, users can effortlessly browse and search for their favorite food items, adding them to a wishlist for later or directly to a shopping cart for immediate purchase. The checkout process is designed with user security and convenience in mind, featuring robust form validation to ensure the accuracy of address and payment details. After completing a purchase, users can easily access their order history in the Orders section. Tomato makes online food shopping both effortless and enjoyable.",
         image: "Tomato.png",
         live: false,
@@ -30,13 +30,13 @@ const ProjectInfo = [
         desc: "Spotify Clone is a full-stack web application that replicates the core features of Spotify, including user authentication, music playback, and playlist creation. The front end is built with React, TailwindCSS, Heroicons, and Firebase, while the back end uses Firebase for user authentication and data storage. Users can create an account, log in, search for songs, and create playlists. The app features real-time updates, so users can see new songs as they are added. Spotify Clone provides a seamless user experience with a clean, modern design and intuitive functionality.",
         image: "Spotify.png",
         live: false,
-        technologies: ["React", "Springboot", "Tailwind", "Tabler-Icons", "MongoDB"],
+        technologies: ["React", "Cloudinary", "Tailwind", "Tabler-Icons", "MongoDB"],
         link: "https://github.com/arnoldcod/Spotify-Music",
         github: "https://github.com/arnoldcod"
     },
     {
-        title: "Nasa App",
-        desc: "NASA App is a cutting-edge web application built with React and Tailwind CSS that brings the wonders of space exploration to your fingertips. Designed with a focus on both performance and aesthetics, this app offers users an immersive experience as they explore data and images directly from NASA’s vast repository. Whether you're browsing through stunning images of distant galaxies, accessing detailed information about planets, or staying updated with the latest space missions, the NASA App provides an intuitive and responsive interface. Tailwind CSS ensures a sleek and modern design, making space exploration not just informative but visually engaging",
+        title: "APOD App",
+        desc: "NASA APOD(Astronomy Picture Of the Day) App is a cutting-edge web application built with React and Tailwind CSS that brings the wonders of space exploration to your fingertips. Designed with a focus on both performance and aesthetics, this app offers users an immersive experience as they explore data and images directly from NASA’s vast repository. Whether you're browsing through stunning images of distant galaxies, accessing detailed information about planets, or staying updated with the latest space missions, the NASA App provides an intuitive and responsive interface. Tailwind CSS ensures a sleek and modern design, making space exploration not just informative but visually engaging",
         image: "Nasa.png",
         live: false,
         technologies: ["React", "Node.js", "PostgresSQL", "Express", "Bootstrap"],
@@ -44,9 +44,9 @@ const ProjectInfo = [
         github: "https://github.com/arnoldcod"
     },
     {
-        title: "arnoldcod7",
+        title: "arnold portfolio",
         desc: "A responsive web app built with React, Typescript, Mantine, and Vanta, designed to offer a sleek and interactive user experience. Mantine provides a robust UI framework, while Vanta adds dynamic, animated backgrounds, creating an engaging and visually appealing interface that adapts seamlessly to any device..",
-        image: "7.png",
+        image: "77.png",
         live: false,
         technologies: ["React", "Typescript", "Mantine", "Vanta"],
         link: "https://github.com/arnoldcod/arnoldcod7",
@@ -57,7 +57,7 @@ const ProjectInfo = [
         desc: "This responsive web application, built with Vue.js, Node.js, and MongoDB Atlas, allows users to perform full CRUD (Create, Read, Update, Delete) operations efficiently. The project was a collaborative effort involving 16 contributors, ensuring a robust and scalable application. Vue.js powers the dynamic and user-friendly frontend, while Node.js and MongoDB Atlas handle the backend, managing data securely and effectively. The project showcases the strength of teamwork and modern web technologies in creating a seamless user experience.",
         image: "cse.png",
         live: false,
-        technologies: ["React", "Tailwind", "Ace Editor"],
+        technologies: ["Vue", "Bootstrap", "Mongo Atlas"],
         link: "https://github.com/arnoldcod/CSE-JS-3-REPO",
         github: "https://github.com/arnoldcod"
     }

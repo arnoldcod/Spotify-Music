@@ -1,28 +1,33 @@
-import { Button, Card, Group, Image, Text, Badge } from "@mantine/core";
+import { Button, Card, Group, Image, Text, Badge, Indicator } from "@mantine/core";
 
-const ProjectCard = ()=> {
+const ProjectCard = (props:any)=> {
     return (
-        <Card w="360px" shadow="sm" padding="lg" radius="md" withBorder>
-        <Card.Section>
+        <Card className="!bg-bgColor cursor-pointer transition-transform duration-300 hover:!scale-[1.02] mb-5 hover:!shadow-[0_0_10px_1px_#64FFDA] !border-primaryColor border-2"  w="360px" shadow="lg" padding="sm" radius="lg" withBorder>
+        <Card.Section className="p-3" >
           <Image
-            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
+          className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA] "
+            src={props.image}
             height={160}
-            alt="Norway"
+            alt={props.image}
           />
         </Card.Section>
   
-        <Group justify="space-between" mt="md" mb="xs">
-          <Text fw={500}>Norway Fjord Adventures</Text>
-          <Badge color="pink">On Sale</Badge>
+        <Group justify="space-between" mt="xs" mb="xs">
+          <Text className="!text-2xl !font-bold !text-white flex items-center">{props.title} {props.live=== true && <Badge variant="outline" color="red" rightSection={<Indicator color="red" position="middle-end" size={7} processing> </Indicator>} >
+            Live
+            </Badge>}</Text>
+          
+        </Group>
+        <Group  mb="xs"> 
+        {props.technologies.map((tech:string , index:number)=> index<3&& <Badge key={index} size="lg" variant="light" color="#64FFDA">{tech}</Badge> )}
         </Group>
   
-        <Text size="sm" c="dimmed">
-          With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-          activities on and around the fjords of Norway
+        <Text className=" !text-justify" lineClamp={5}  size="sm" c="dimmed">
+          {props.desc}
         </Text>
   
-        <Button color="blue" fullWidth mt="md" radius="md">
-          Book classic tour now
+        <Button className="!bg-primaryColor !text-bgColor" fullWidth mt="md" radius="md">
+          Show more
         </Button>
       </Card>
     )

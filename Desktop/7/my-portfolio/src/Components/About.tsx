@@ -23,7 +23,7 @@ const About = ()=> {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x64FFDA,
+        color: 0x34DFDA,
         backgroundColor: 0x112240,
         points: 10.00,
         maxDistance: 2.00,
