@@ -105,7 +105,7 @@ const ExperienceInfo = [
     },
     {
         role: "Product manager",
-        company: "Treasure World Inc",
+        company: "Treasure World",
         date: "June 2021 - Sep 2023",
         desc: " I oversaw the integration of IT systems that support inventory management and marketing efforts, ensuring seamless data flow between systems.I ensured the IT infrastructure supports the company’s operations efficiently, including website management, online sales platforms, and data security. I developed and executed digital marketing strategies that leverage GIS certification and quality as key selling points. Utilize social media: TikTok, Douyin, Taobao, and other Chinese social media apps",
         skills: ["strategic thinking", "Analytical and problem solving", "communication and collaboration", "ux/ui", "customer focus"]
