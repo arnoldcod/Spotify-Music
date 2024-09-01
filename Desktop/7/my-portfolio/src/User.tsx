@@ -17,8 +17,8 @@ const ProjectInfo = [
         github: "https://github.com/arnoldcod"
     },
     {
-        title: "Food  App (Tomato)",
-        desc: "Tomato is a modern food delivery app built using the MERN stack (MongoDB, Express.js, React, Node.js) that offers a seamless and enjoyable online food shopping experience. With Tomato, users can effortlessly browse and search for their favorite food items, adding them to a wishlist for later or directly to a shopping cart for immediate purchase. The checkout process is designed with user security and convenience in mind, featuring robust form validation to ensure the accuracy of address and payment details. After completing a purchase, users can easily access their order history in the Orders section. Tomato makes online food shopping both effortless and enjoyable.",
+        title: "Food/Tomato  App ",
+        desc: "Tomato is a modern food delivery app built using the MERN stack (MongoDB, Express.js, React, Node.js) that offers a seamless and enjoyable online food shopping experience. With Tomato, users can effortlessly browse and search for their favorite food items, adding them to a orderlist for later or directly to a shopping cart for immediate purchase. The checkout process is designed with user security and convenience in mind, featuring robust form validation to ensure the accuracy of address and payment details. After completing a purchase, users can easily access their order history in the Orders section. Tomato makes online food shopping both effortless and enjoyable.",
         image: "Tomato.png",
         live: false,
         technologies: ["React", "Express", "MongoDB", "Tailwind", "Stripe", "Nodejs"],

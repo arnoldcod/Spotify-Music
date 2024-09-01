@@ -1,8 +1,14 @@
 import { Button, Card, Group, Image, Text, Badge, Indicator } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import FullProjectModal from "./FullProjectModal";
 
 const ProjectCard = (props:any)=> {
+  const [opened, { open, close }] = useDisclosure(false);
+
+
     return (
-        <Card className="!bg-bgColor cursor-pointer transition-transform duration-300 hover:!scale-[1.02] mb-5 hover:!shadow-[0_0_10px_1px_#64FFDA] !border-primaryColor border-2"  w="360px" shadow="lg" padding="sm" radius="lg" withBorder>
+       <>
+      <Card onClick={open} className="!bg-bgColor cursor-pointer transition-transform duration-300 hover:!scale-[1.02] mb-5 hover:!shadow-[0_0_10px_1px_#64FFDA] !border-primaryColor border-2"  w="360px" shadow="lg" padding="sm" radius="lg" withBorder>
         <Card.Section className="p-3" >
           <Image
           className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA] "
@@ -26,10 +32,12 @@ const ProjectCard = (props:any)=> {
           {props.desc}
         </Text>
   
-        <Button className="!bg-primaryColor !text-bgColor" fullWidth mt="md" radius="md">
+        <Button onClick={open} className="!bg-primaryColor !text-bgColor" fullWidth mt="md" radius="md">
           Show more
         </Button>
       </Card>
+      <FullProjectModal opened={opened} close={close} title={props.title} desc={props.desc} image={props.image} live={props.live} link={props.link} github={props.github} technologies={props.technologies} />
+      </> 
     )
 }
 
