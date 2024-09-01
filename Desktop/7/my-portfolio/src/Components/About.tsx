@@ -37,8 +37,8 @@ const About = ()=> {
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
+            minHeight: 150.00,
+            minWidth: 150.00,
             scale: 1.00,
             scaleMobile: 1.00,
             color: 0x3fc0c0,
@@ -68,7 +68,7 @@ const About = ()=> {
 
                 <Button component="a" href="https://www.linkedin.com/in/arnold-uwamwezi-98902b198/" className="!text-bgColor !w-fit" size="lg" variant="filled" color="#64FFDA">Check Resume</Button>
             </div>
-            <div className="h-[35vh] flex justify-center items-center overflow-hidden rounded-full mr-14 w-[22vw]" id="photo">
+            <div className="h-[40vh] flex justify-center items-center overflow-hidden rounded-full mr-14 w-[20vw]" id="photo">
                     <img className="w-[85%] justify-center  shadow-xl rounded-full " src="/7.png" alt="profile" />
             </div>
 

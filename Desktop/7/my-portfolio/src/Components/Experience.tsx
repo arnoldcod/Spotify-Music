@@ -4,7 +4,7 @@ import { ExperienceInfo } from "../User"
 
 const TimelineItem = (items:any) => {
     return items.map((item:any, index:number) => <Timeline.Item key={index} className="!pt-12 !mb-2" bullet={<IconBriefcaseFilled className="!text-bgColor" size={20} /> } >
-        <div className="border flex flex-col gap-2  border-primaryColor p-4 rounded-2xl">
+        <div className=" border shadow-[0_0_10px_0_#64FFDA50] flex flex-col gap-2  border-primaryColor p-4 rounded-2xl">
             <div className="flex gap-2 items-center">
                 <img className="rounded-lg w-16" src={`${item.company}.png`} alt="company" />
             
@@ -27,7 +27,7 @@ const TimelineItem = (items:any) => {
 
 const Experience = () => {
   return (
-    <div className="px-16 mx-20 my-10 mb-28 font-mono" id="Skills">
+    <div className="px-16 mx-20 my-10 mb-28 font-mono" id="Experience">
             <h1 className="text-4xl  mb-10 font-bold text-center text-white"><span className="text-primaryColor">04.&nbsp;</span>Experience</h1>
          
             <Timeline color="#64FFDA" active={5} bulletSize={30} lineWidth={2}>
