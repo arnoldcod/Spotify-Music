@@ -7,7 +7,7 @@ const ProjectCard = (props:any)=> {
 
 
     return (
-       <>
+       <div data-aos="fade-up" data-aos-duration="800">
       <Card onClick={open} className="!bg-bgColor cursor-pointer transition-transform duration-300 hover:!scale-[1.02] mb-5 hover:!shadow-[0_0_10px_1px_#64FFDA] !border-primaryColor border-2"  w="360px" shadow="lg" padding="sm" radius="lg" withBorder>
         <Card.Section className="p-3" >
           <Image
@@ -37,7 +37,7 @@ const ProjectCard = (props:any)=> {
         </Button>
       </Card>
       <FullProjectModal opened={opened} close={close} title={props.title} desc={props.desc} image={props.image} live={props.live} link={props.link} github={props.github} technologies={props.technologies} />
-      </> 
+      </div> 
     )
 }
 

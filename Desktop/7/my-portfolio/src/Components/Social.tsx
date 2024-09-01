@@ -3,9 +3,11 @@ import { IconBrandGithub, IconBrandLeetcode, IconBrandLinkedin, IconBrandX } fro
 const Social = ()=> {
     const socialLinks = [ {link:"https://github.com/arnoldcod", icon:IconBrandGithub}, {link:"https://www.linkedin.com/in/arnold-uwamwezi-98902b198/", icon:IconBrandLinkedin}, {link:"https://x.com/arnoldcod_", icon:IconBrandX}, {link:"https://leetcode.com/u/arnoldcod/", icon:IconBrandLeetcode} ];
 
-    const socialIcons = socialLinks.map((socialLink) =>{
-        return <a href={`${socialLink.link}`}  className=" font-mono text-lg  hover:text-primaryColor hover:-translate-x-2 transition transform duration-300 ease-in-out">
+    const socialIcons = socialLinks.map((socialLink, index) =>{
+        return <a key={index} href={`${socialLink.link}`}   className=" font-mono text-lg  hover:text-primaryColor hover:-translate-x-2 transition transform duration-300 ease-in-out">
+            <div data-aos="zoom-in-right" data-aos-duration="800">
             <socialLink.icon className="-rotate-90" size={30} />
+            </div>       
         </a>
     })
 

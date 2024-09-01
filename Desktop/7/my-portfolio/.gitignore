@@ -21,3 +21,52 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+
+
+  useEffect(() => {
+    if (!net) {
+      setNet(NET({
+        el: "#bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x34DFDA,
+        backgroundColor: 0x112240,
+        points: 10.00,
+        maxDistance: 2.00,
+        spacing: 10.00
+      }))
+    }
+
+    if(!trunk) {
+        setTrunk(TRUNK({
+            el: "#photo",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 150.00,
+            minWidth: 150.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3fc0c0,
+            backgroundColor: 0x112240,
+            spacing: 1.00,
+            chaos: 8.00
+          })
+    )
+}
+
+
+    return () => {
+      if (net) net.destroy()
+    if (trunk) trunk.destroy()
+  
+    }
+  }, [])
