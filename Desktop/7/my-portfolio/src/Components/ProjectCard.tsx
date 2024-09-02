@@ -32,7 +32,7 @@ const ProjectCard = (props:any)=> {
           {props.desc}
         </Text>
   
-        <Button onClick={open} className="!bg-primaryColor !text-bgColor" fullWidth mt="md" radius="md">
+        <Button onClick={open} className="!bg-bgColor border !border-primaryColor !text-primaryColor" fullWidth mt="md" radius="md">
           Show more
         </Button>
       </Card>
