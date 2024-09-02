@@ -20,7 +20,6 @@ module.exports = {
           "100%": { backgroundPosition: "bottom center" },
         },
       },
-      
     },
     screens: {
       'xsm': '350px',
