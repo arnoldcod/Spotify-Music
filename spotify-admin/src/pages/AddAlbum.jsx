@@ -37,6 +37,7 @@ const AddAlbum = () => {
                 toast.success("Album added successfully!");
             } else {
                 toast.success("Album added successfully!");
+
             }
         } catch (error) {
             toast.error("An error occurred while adding the album.");
