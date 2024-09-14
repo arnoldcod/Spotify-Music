@@ -84,7 +84,7 @@ const PlayerContextProvider = (props)=> {
                 setSongsData(response.data.songs);
                 setTrack(response.data.songs[0]);         
         } catch (error) {
-            
+            console.log("Error getting songs", error);
         }
      }
 
@@ -93,6 +93,7 @@ const PlayerContextProvider = (props)=> {
             const response = await axios.get(`${url}/api/album/list`);
                 setAlbumsData(response.data.albums);         
         } catch (error) {
+            console.log("Error getting albums", error);
             
         }
      }
