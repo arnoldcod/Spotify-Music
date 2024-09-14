@@ -8,7 +8,7 @@ export const Sidebar = () => {
     const navigate =  useNavigate();
 
   return (
-    <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
+    <div className='w-[20%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
         <div className='bd-[#121212] h-[15%] rounded flex flex-col justify-around'>
             <div onClick={()=> navigate('/')} className='flex items-center gap-3 pl-8 cursor-pointer'>
                 <img className='w-6' src={assets.home_icon} alt="" />
@@ -42,18 +42,6 @@ export const Sidebar = () => {
                 <p className='font-light'>We'll keep you updated on new episodes</p>
                 <button className='px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4 '>Browse Podcast</button>
             </div>
-            {/* <div className='p-4 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4'> 
-            </div>
-            <div className='p-4 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4'> 
-            </div> */}
-
-            {Array(6).fill().map((_, index) => (
-                <div
-                    key={index}
-                    className='p-4 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4'
-                >
-                </div>
-                ))}
         </div>
 
     </div>

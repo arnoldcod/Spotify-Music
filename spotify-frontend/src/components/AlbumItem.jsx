@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
+// eslint-disable-next-line react/prop-types
 const AlbumItem = ({image,name,desc,id}) => {
      
   const navigate = useNavigate()

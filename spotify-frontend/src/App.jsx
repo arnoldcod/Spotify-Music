@@ -15,7 +15,7 @@ const App = () => {
       {
         songsData.length !==0
         ? <>
-        <div className='h-[90% flex'>
+        <div className='h-[90%] flex'>
         <Sidebar />
         <Display />
       </div>
