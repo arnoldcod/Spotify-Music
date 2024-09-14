@@ -3,10 +3,10 @@ import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {Routes, Route} from 'react-router-dom';
-import AddSong from './pages/addSong';
-import AddAlbum from './pages/addAlbum';
-import ListSong from './pages/listSong';
-import ListAlbum from './pages/listAlbum';
+import AddSong from './pages/AddSong';
+import AddAlbum from './pages/AddAlbum';
+import ListSong from './pages/ListSong';
+import ListAlbum from './pages/ListAlbum';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 
